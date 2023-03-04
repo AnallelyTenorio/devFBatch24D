@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Shantell Sans', cursive;
+}
+
+li {
+    list-style: none;
+    margin: 30px 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 22px;
+}
+
+h2 {
+    color: white;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+article {
+
+    display: flex;
+    width: 500px;
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7C8E0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    border: 5px solid #95BDFF;
+}
+
+article:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+button {
+    background-color: #95BDFF;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+footer {
+    background-color: #F7C8E0;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+button:active {
+    background-color: #B4E4FF;
+}
+
+li:hover {
+    background-color: #F7C8E0;
+    padding: 15px 25 px;
+    border-radius: 10px;
+}
+
+a:visited,
+a:active {
+    color: white;
+}
+
+.gatito {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#logo-gato {
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+    object-fit: cover;
+}
+
+#logo-gato:hover {
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+#encabezado {
+    display: flex;
+    background-color: #95BDFF;
+    color: white;
+    padding: 20px 10px;
+    font-size: 30px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+div {
+    display: flex;
+}
+
+#principal {
+    background-color: #B4E4FF;
+}
+
+
+.carrito {
+    width: 35px;
+}
+
+.gatito {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+article p {
+    padding: 0;
+}
+#navegacion {
+    display: flex;
+}
+
+@media screen and (max-width:500px) {
+  #encabezado {flex-direction: column;}
+  #navegacion {flex-direction: column;}
+  li{text-align: center;
+margin: 5px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;

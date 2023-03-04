@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.icon {
+    position: center;
+    width: 50px;
+    padding: 15px 0px;
+}
+.card-icon{
+    width: 30px;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 2;
+
+}
+
+li {
+    list-style: none;
+}
+
+.icon {
+    list-style: none;
+    margin: 30px 0px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+    transition: .5s;
+}
+
+#pinterest-icon {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+#navbar-pinterest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link a {
+    padding: 0px 15px;
+    text-decoration: none;
+}
+
+.bi:hover {
+    background-color: black;
+}
+
+li:hover {
+    padding: 15px 5px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.icon:hover {
+    background-color: rgb(211, 214, 214);
+    padding: 15px;
+    border-radius: 50px;
+    align-items: stretch;
+}
+
+.finder {
+    background-image: url('img/lupa.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: lightgray;
+    opacity: .5;
+    border-radius: 30px;
+    width: 880px;
+    height:40px;
+    padding-left:12px;  
+    padding-top:5px; 
+    border-color: transparent;
+}
+
+::placeholder {
+    padding: 25px;
+    font-size: 18px;
+    color: rgb(75, 74, 74);
+}
+
+.card-image {
+    position: relative;
+}
+
+.image {
+    width: 240px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.btn-guardar {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background-color: red;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    border-color: transparent;
+    font-size: 18px;
+}
+
+.btn-share {
+    display: none;
+    position: absolute;
+    bottom: 65px;
+    right: 75px;
+    background-color: lightgrey;
+    border-radius: 50px;
+}
+.btn-share .card-icon {
+    margin:0px;
+}
+
+.btn-more {
+    display: none;
+    position: absolute;
+    bottom: 65px;
+    right: 20px;
+    background-color: lightgrey;
+    border-radius: 50px;
+}
+
+.btn-more .card-icon {
+    margin:0px;
+}
+
+.card-image:hover .btn-share{
+    display: inline;
+}
+
+.card-image:hover .btn-guardar{
+    display: inline;
+}
+
+.card-image:hover .btn-more{
+    display: inline;
+}
+
+.card-image img {
+    -webkit-transition: .2s all;
+}
+
+.card-image img:hover {
+    -webkit-filter:none;
+}
+
+.card-image .image:hover {
+    -webkit-filter: brightness(60%);
+}
+
+main {
+    margin: 90px;
+}
+
+#content {
+    columns: 7 240px;
+    column-gap: 10px;
+}
+
+@media screen and (max-width:1024px) {
+    .finder {
+        width: 400px;   
+    }
+    .btn-guardar {
+        top: 50px;
+        right: 50px;
+    }
+    .btn-share {
+        bottom: 65px;
+        right: 85px;
+    }
+    .btn-more {
+        bottom: 65px;
+        right: 45px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .finder {
+        width: 200px;
+    }
+    .btn-guardar {
+        top: 10px;
+        right: 60px;
+    }
+    .btn-share {
+        bottom: 65px;
+        right: 95px;
+    }
+    .btn-more {
+        bottom: 65px;
+        right: 55px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .finder {
+        width: 40px;
+        margin-left: 25px;
+    }
+    #nav-links .bi {
+        display: none;
+    }
+    .btn-guardar {
+        top: 10px;
+        right: 15px;
+    }
+    .btn-share {
+        bottom: 65px;
+        right: 60px;
+    }
+    .btn-more {
+        bottom: 65px;
+        right: 15px;
+    }
+}
